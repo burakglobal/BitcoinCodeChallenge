@@ -11,11 +11,11 @@ import UIKit
 
 class DetailPresenter:DetailPresenterProtocol {
     
-    var view: DetailPresenterToViewProtocol?
+    weak var view: DetailPresenterToViewProtocol?
     
     var interactor: DetailPresenterToInteractorProtocol?
     
-    var router: DetailPresenterToRouterProtocol?
+    weak var router: DetailPresenterToRouterProtocol?
 
     func showDetails() {
         interactor?.showDetails()

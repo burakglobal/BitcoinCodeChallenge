@@ -13,12 +13,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var city: UILabel!
     
-    var presentor:DetailPresenterProtocol?
+    weak var presentor:DetailPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.largeTitle()
         presentor?.showDetails()
+    }
+
+    deinit {
+        print("DetailViewController deinitilized")
     }
 }
 
