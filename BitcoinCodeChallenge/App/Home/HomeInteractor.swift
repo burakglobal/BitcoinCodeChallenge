@@ -32,21 +32,24 @@ class HomeInteractor: PresenterToInteractorProtocol{
         let temp: Double
     }
 
-    func handleLocation() {
+    func handleLocation(completition:@escaping(_ res:Bool) ->()) {
         self.updateWithCurrentLocation { (res) in
-            self.fetchCities()
+            self.fetchCities(completition: { (res) in
+                completition(true)
+            })
         }
     }
 
-    func fetchCities() {
+    func fetchCities(completition:@escaping(_ res:Bool) ->()) {
         process { (res,dat) in
             if res {
                 if let dat = dat {
                     self.presenter?.homeFetchedSuccess(homeModelArray: dat)
+                    completition(true)
                     return
                 }
             }
-
+            completition(false)
             self.presenter?.homeFetchFailed()
         }
     }

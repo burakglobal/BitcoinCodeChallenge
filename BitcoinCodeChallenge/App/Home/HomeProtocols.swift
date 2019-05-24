@@ -16,7 +16,7 @@ protocol HomePresenterProtocol: class{
     var router: PresenterToRouterProtocol? {get set}
     func startFetchingCities()
     func showWeatherController(navigationController:UINavigationController,weather:HomeModel)
-    func handleLocation()
+    func handleLocation(completition:@escaping(_ res:Bool)->())
 
 }
 
@@ -32,8 +32,8 @@ protocol PresenterToRouterProtocol: class {
 
 protocol PresenterToInteractorProtocol: class {
     var presenter:InteractorToPresenterProtocol? {get set}
-    func fetchCities()
-    func handleLocation()
+    func fetchCities(completition:@escaping(_ res:Bool)->())
+    func handleLocation(completition:@escaping(_ res:Bool)->())
 }
 
 protocol InteractorToPresenterProtocol: class {

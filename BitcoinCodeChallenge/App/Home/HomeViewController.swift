@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController,NVActivityIndicatorViewable {
 
     var presentor:HomePresenterProtocol?
     
@@ -17,7 +18,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presentor?.handleLocation()        
+        self.startAnimating()
+        
+        presentor?.handleLocation(completition: { (res) in
+            self.stopAnimating()
+        })
+
         uiTableView.delegate = self
         uiTableView.dataSource = self
         self.largeTitle()

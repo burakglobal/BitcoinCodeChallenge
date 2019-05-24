@@ -17,12 +17,17 @@ class HomePresenter:HomePresenterProtocol {
     
     var router: PresenterToRouterProtocol?
 
-    func handleLocation() {
-        interactor?.handleLocation()
+    func handleLocation(completition:@escaping(_ res:Bool)->()) {
+
+        interactor?.handleLocation(completition: { (res) in
+            completition(true)
+        })
     }
 
     func startFetchingCities() {
-        interactor?.fetchCities()
+        interactor?.fetchCities(completition: { (res) in
+            
+        })
     }
     
     func showWeatherController(navigationController: UINavigationController, weather:HomeModel) {
