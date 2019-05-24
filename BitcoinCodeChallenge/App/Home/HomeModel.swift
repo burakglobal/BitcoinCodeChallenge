@@ -21,13 +21,8 @@ class HomeModel:NSObject {
             mf.numberFormatter.maximumFractionDigits = 0
             mf.numberFormatter.numberStyle = .none
             let t = Measurement(value: self.temperture!, unit: UnitTemperature.kelvin)
-            let celc = mf.string(from: t)
-            let fah = Double(celc.replacingOccurrences(of: "°C", with: "", options: .literal, range: nil))
-
-            do {
-                let fahCalc = try? fah! * 1.8 + 32
-                self.tempString = "\(celc) - \(fahCalc ?? 0.0 )°F"
-            }
+            let fahr = mf.string(from: t)
+            self.tempString = "\(fahr)"
         }
     }
     
