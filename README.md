@@ -13,5 +13,5 @@ PS: Also, In order to show my threading(GCD) knowledge, I used Dispatch Group wh
 ![alt text](https://miro.medium.com/max/1084/1*7mONTMKAbKDTPZgSKjTiNA.png "Viper")
 
 # App Screenshots 
-![alt text](https://i.ibb.co/djGtH9j/IMG-53874-BBCA108-1.jpg "Home")
+![alt text](https://ibb.co/HTpx7Wn "Home")
 
