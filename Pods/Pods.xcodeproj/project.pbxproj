@@ -1,0 +1,1264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0136CAC7DDC1638805E6EC8A43644F3E /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A1EEEC9EC39A5602FC42D2D0AE0DC /* NSURLSession+AnyPromise.m */; };
+		01A2A6E97D5A8FA1CEF93E1FB42365FE /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE565D0F7E674D3C89CE3E41A7EC9BF0 /* Resolver.swift */; };
+		08156A9275DBE0E4EF133699A5EE1D30 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21D54353A273EFB583DC11EC5C41B0 /* NSTask+AnyPromise.m */; };
+		0BF27D26301645CB152EF4CC1C83925C /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E986873A7E761369AA2832BAFC8358F /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFEF9FF82B2A99279216BAE07CD7561 /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = A40CF814DAE8F66EB395E0DDA34EBFCE /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DCD0618EC92C7A962AAE7216BAA6C3 /* MKDirections+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 407513F930A0A3F519FB5EC191BF07E1 /* MKDirections+AnyPromise.m */; };
+		117EA5E3CBEED536F1817E744EC093A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F524EE97253820396A38098E7EA2ADB /* CoreLocation.framework */; };
+		12FAFB5C60410C8A50120229A327F6D0 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20318EB272EB48BAF6E7D48CFE199DC /* Guarantee.swift */; };
+		134CD5068E149A620854FD98BFBCFC60 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256DBD0FFBB0720720A0430D79341C /* SwiftyJSON-dummy.m */; };
+		14771300C0F10F940F90CF4E34D37548 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB72C3FEB9FF1630A21B855C0907A3F /* dispatch_promise.m */; };
+		1BE7C4A1E3C89005A3B3A72B76204E1B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC83064F9BA66C71A3E3F4E2B9246BD /* Box.swift */; };
+		1E3BD530A30BC3463B381BA5AB254E20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D020F240E5E3D408035335F3403373A /* Foundation.framework */; };
+		1ED59651EA4900265AB8A8FE705CE1A2 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 784A7690955C0E6EA26A249DB31FA697 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C1952E764FECE6D38E77F72F5C4EA6A /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC19AEBE9F283D351D396864C239780 /* when.m */; };
+		2C9729582F19175CD4AFE76CAFE1AC43 /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D8D26CC0B9ED68110894749BA8131 /* UIViewPropertyAnimator+Promise.swift */; };
+		2E60438A2D33D261513DF4644BADDD98 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B9B28B41D960C5225299D5CBE2D34D /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EB28038AA77DEA4F84B23233C51C353 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280697E20393B28ACBAFC306C96E184 /* Catchable.swift */; };
+		2FADCD7D1B4504F79E9E5270927E3CC5 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC59FFFD79F22218B0C4FAC9890C1E3 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C26D76662B230B3151F6B91C74615BC /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = AD730A2EC157181D8E47E174BBBC6C77 /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9EAC390D2AF32D288617B85B28D532 /* CLLocationManager+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CCBB4F495318F27ED8DE813BB91F7B /* CLLocationManager+AnyPromise.m */; };
+		405622AE208578EE3EBBC038A2662573 /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 50AF7F5FEE5D9A5AE42964D67117626B /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46B99116DA7A8161BAB836410F5C7383 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2024357A7E98AAFC3D7BA2AE6CB4795 /* Configuration.swift */; };
+		4932D3882A93457C3F2D801A06B74951 /* CLLocationManager+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3E0F7F719E3488B99EBC15E14DEA42 /* CLLocationManager+Promise.swift */; };
+		4946647B0991DE332BE8CBDB00028FEB /* MKMapSnapshotter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 182B0FB59850C13F41862391F0B93F17 /* MKMapSnapshotter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D59A502F952C320AC8ABC548AAAA6F9 /* MKMapSnapshotter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEA97F2381462F625DFDDE4A185EF43 /* MKMapSnapshotter+AnyPromise.m */; };
+		550481B4BFF7ABBF8B9554ACB85E2D19 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B29C2595281D5745CA7AE91CC141D7 /* when.swift */; };
+		5C8CCCB0E72037FFA5D3BB7F048E11D2 /* PMKCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C534E3B6DAE5EDA56E401E4907C145 /* PMKCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB3CCD1C245118B74AB73337346E8EC /* MKDirections+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E33B0ACA00466BC9BEA2145C81FF90 /* MKDirections+Promise.swift */; };
+		6E6FE21DCDEB134BE63E96295172F533 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5F8FC8E7CB12A0F61E597C6ED3466D /* UIView+Promise.swift */; };
+		6FC3E29FE77F71CE784A54343265D693 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB2FFBBB9850ABCC248821264399A0 /* hang.m */; };
+		6FEDF5AFD283C0FC98EF435EC9024434 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1248BA90977E31D20FCB5A8F35C0A593 /* NSObject+Promise.swift */; };
+		766178B39C8E7363D59C8C6530F3A8D7 /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D787E72551B4D48533141E20176514FD /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		799292D1084D05474F63EC4B7914B5A5 /* CLGeocoder+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3AB381F97F566400ED673B89DD9F2 /* CLGeocoder+Promise.swift */; };
+		79BBBA290FD4215EE63B03A7E9B18E1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A14701490D3EE48FE86A20338008FFB /* MapKit.framework */; };
+		7BF663BE53D70B07510C7EE3FE334BC5 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732E24FA5F75942A0671C90E2B85895 /* Error.swift */; };
+		7EB47468681D42063EC6016BC91451A3 /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 0870F7C76DCEB7F741EF7807DA5346A0 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F8F2199798B53FA3EC0C3DB50685986 /* CLGeocoder+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9377215EBE2DBF7312B9952E6E87FA /* CLGeocoder+AnyPromise.m */; };
+		84D36E14F3510DCB7680E8F6563042CC /* Pods-BitcoinCodeChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B86CFC267D51D01254B5C571AC09C0 /* Pods-BitcoinCodeChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF976AEA949C617F9FAF42F44108608 /* MKMapSnapshotter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D7671EF5FDBBDB218A0DFD80F0D30 /* MKMapSnapshotter+Promise.swift */; };
+		908CB3753E30C546C854EB3E29CFC7D7 /* PMKMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8B197654C8D409C1B79A573254B3FD /* PMKMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923DE70C4AAD8B717314A6631994C753 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6D198F3EC14095119C31A018E351B /* Deprecations.swift */; };
+		9401E78BA6EA3657E13D0F641D8B3AF4 /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 40169F84396F3B53ADAE7F87D26EA623 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		944DDE36BBDE6730775F753168C1F923 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C284A5521C300E544C8E9F0B566F0D /* hang.swift */; };
+		951302F8968B1A2CE172B14BEE1CD941 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB9A68B2665C452AA623B843C4E81D3 /* UIKit.framework */; };
+		9615745330CA7CC636B628780086BAC9 /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CE7F02EA920938FA7CE2AE0936C78 /* AnyPromise.swift */; };
+		9C2731F3B6DFEA74801E6A4F90E81E42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D020F240E5E3D408035335F3403373A /* Foundation.framework */; };
+		9EB04332F6D032D2D21A377699846DFF /* MKDirections+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC3A7B6459698C0CD3EB328D5FA0F96 /* MKDirections+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FA83852DE38A52EB3D4665F09599178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D020F240E5E3D408035335F3403373A /* Foundation.framework */; };
+		A34DEBAEFA6719DA5C109A92F9EF45B9 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142236BC5949784CAFCAEC6A0519CA5 /* after.swift */; };
+		A9362A47F91033319EA40F02CD092B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D020F240E5E3D408035335F3403373A /* Foundation.framework */; };
+		AADB55BC0692D7845F5DE99FAD40B61C /* Pods-BitcoinCodeChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B0967D2AB9DB7EE2A6468811F2C1B /* Pods-BitcoinCodeChallengeTests-dummy.m */; };
+		AC37C716D240E96CF79A44AB92066612 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B45820C9AF08306C1969C4BFD9EF3 /* NSNotificationCenter+Promise.swift */; };
+		AD15FD12205F3B4036B9AE489EF3DAEC /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DB6CE0C0EC4FC90A4693D1D9934491 /* UIViewController+AnyPromise.m */; };
+		B07E2DBD04BE35EF64B8C08A53035168 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EB60373D9BE72B86638417EDB4FF6 /* LogEvent.swift */; };
+		B1F0315F58CAE05338F05524CA96F3C9 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43B743993B74288690A65595E982BC /* race.swift */; };
+		B754CF94F54BD749C02DE0AA925E1403 /* CLLocationManager+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E23633C4862ED2125EC8D7A572E94D6B /* CLLocationManager+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA347199C762D3F05E68D82054895160 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59C5BB466266FFC38804304E66B0A26 /* CustomStringConvertible.swift */; };
+		C2920A518171A316BBF7561D092C8CBD /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BB9D0F8BFDDFB406051EFF86E94E /* firstly.swift */; };
+		C6610BA72BBBBFC52F48EEA306B5BAE6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC8C79C02CE24FCCA8EB93CBC56ABC /* SwiftyJSON.swift */; };
+		C8AB7D3D829E42C8CC40504F08F6B1C0 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1912143AA7FAF1379B3E679873BA677C /* PromiseKit-dummy.m */; };
+		CCE0F29A728681CBCB5C7F9DB712351E /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B32628D8AEA72D4D3FDF79E8217BD05 /* afterlife.swift */; };
+		CEFBDD28CF34085A099383369A2CFFB6 /* Pods-BitcoinCodeChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A987EC33528F864AB5ACC09A571D6B /* Pods-BitcoinCodeChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D236845956F69A9AD9DDA5B7266F5B1F /* Pods-BitcoinCodeChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F19EC49536586BC99522494C6516A /* Pods-BitcoinCodeChallenge-dummy.m */; };
+		D2FFD9450618242EFB570BF55C6E53A4 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7A0C0073638D444F7BBD591FD8306 /* join.m */; };
+		D31C6B2EED949D8BEBF6D409B04D564D /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3989934331B65F41750A5DC6EA329DA4 /* AnyPromise.m */; };
+		D5302863F71C1BCE935210AF5A77F8F4 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = DD65895A514E3600463AFC620F924FA8 /* after.m */; };
+		D809A4787B96F68D1DAE0148CBC8E290 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = D28EA8116A761A48A0FDDEA98AE63F09 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD3530A313E610C7DF11B68D42E3D6AD /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A5A798A8109CA8BB39B1471981AF9 /* NSNotificationCenter+AnyPromise.m */; };
+		DDD20A5D1CAC38EDB49C358E2334AFD1 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590406B81F1D5B135F33B220FEFA7F9 /* race.m */; };
+		F3514511106CF744593511EE242436DF /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33322FE839B006DBD5CB18B21FCE745B /* Thenable.swift */; };
+		F58F37CDB07C77B34E8C489DD24F3325 /* CLGeocoder+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA3BB7DE7A31CF61169AE75074AB9BE /* CLGeocoder+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E3329A35C3665D691E65E0C9782E82 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77F45380F4DFE578B8364863BDC02B /* Process+Promise.swift */; };
+		F60940C24EB266EEDCD533F11B46AE4F /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A470DB1017763F9A87F68E6ADD85A /* UIView+AnyPromise.m */; };
+		F618C88F2BE64A4811EDF77136758331 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9043CABD35984247B046EF3867FF563 /* NSURLSession+Promise.swift */; };
+		FBC5ED12B9FF72115DC4FEAB4D34123E /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AA5DB9DE61F3C9FE0AD01990A796AB /* Promise.swift */; };
+		FD71DAA775498B208175C7DACD0E3986 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC17265F9DCBAECE3E16C0A2FD258D3 /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ED875DA1119F0D29CF17C8A1BBE0580 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93DE80C764FB21C2780B7E1C828AC1AA;
+			remoteInfo = PromiseKit;
+		};
+		DD5A932A0B4FF781EE130585F882FBD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2406D65F23C4F57E34A5A41F16EB15E2;
+			remoteInfo = "Pods-BitcoinCodeChallenge";
+		};
+		F8FC74959ADFDD3CCE9295CC3A10A618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6437D0C3F75FA6BDE458F4F681CF09E3;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CCBB4F495318F27ED8DE813BB91F7B /* CLLocationManager+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+AnyPromise.m"; path = "Extensions/CoreLocation/Sources/CLLocationManager+AnyPromise.m"; sourceTree = "<group>"; };
+		05A3AB381F97F566400ED673B89DD9F2 /* CLGeocoder+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLGeocoder+Promise.swift"; path = "Extensions/CoreLocation/Sources/CLGeocoder+Promise.swift"; sourceTree = "<group>"; };
+		05E3AFB7E076882B327E445B891D0212 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		0870F7C76DCEB7F741EF7807DA5346A0 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
+		08DF30E8D17749CF8D4277533371D8D3 /* Pods-BitcoinCodeChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitcoinCodeChallengeTests-resources.sh"; sourceTree = "<group>"; };
+		0ADB2FFBBB9850ABCC248821264399A0 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
+		0D3B0967D2AB9DB7EE2A6468811F2C1B /* Pods-BitcoinCodeChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitcoinCodeChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		0DC83064F9BA66C71A3E3F4E2B9246BD /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		0EA3BB7DE7A31CF61169AE75074AB9BE /* CLGeocoder+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLGeocoder+AnyPromise.h"; path = "Extensions/CoreLocation/Sources/CLGeocoder+AnyPromise.h"; sourceTree = "<group>"; };
+		0EAEC29BB4FC763C58006172FD425C8C /* Pods-BitcoinCodeChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitcoinCodeChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FF9BB9D0F8BFDDFB406051EFF86E94E /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
+		1248BA90977E31D20FCB5A8F35C0A593 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		1280697E20393B28ACBAFC306C96E184 /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
+		13DB6CE0C0EC4FC90A4693D1D9934491 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
+		160260F55FDE865DC674EAFEF6662F67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182B0FB59850C13F41862391F0B93F17 /* MKMapSnapshotter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKMapSnapshotter+AnyPromise.h"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+AnyPromise.h"; sourceTree = "<group>"; };
+		1912143AA7FAF1379B3E679873BA677C /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		199935E01029EBE4829DFED4B8617F2C /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC19AEBE9F283D351D396864C239780 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
+		1D21D54353A273EFB583DC11EC5C41B0 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
+		1FC3A7B6459698C0CD3EB328D5FA0F96 /* MKDirections+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKDirections+AnyPromise.h"; path = "Extensions/MapKit/Sources/MKDirections+AnyPromise.h"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2838B5FA8449F1F1119A45DC09C73C40 /* Pods_BitcoinCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitcoinCodeChallenge.framework; path = "Pods-BitcoinCodeChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283B45820C9AF08306C1969C4BFD9EF3 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		2FC59FFFD79F22218B0C4FAC9890C1E3 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
+		33322FE839B006DBD5CB18B21FCE745B /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
+		358513A6EDFFF5EADF090CF2EB7E3805 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		3989934331B65F41750A5DC6EA329DA4 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
+		39D6D198F3EC14095119C31A018E351B /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
+		40169F84396F3B53ADAE7F87D26EA623 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
+		407513F930A0A3F519FB5EC191BF07E1 /* MKDirections+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKDirections+AnyPromise.m"; path = "Extensions/MapKit/Sources/MKDirections+AnyPromise.m"; sourceTree = "<group>"; };
+		418F41A7B984AA66348E7BCC2A3FC891 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		41D7A0C0073638D444F7BBD591FD8306 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
+		46AEEB316C3AE7082A74482C7EFD2FE0 /* Pods-BitcoinCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		4B32628D8AEA72D4D3FDF79E8217BD05 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
+		4DBF67E79E249725413ED06C91F90FE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0A1EEEC9EC39A5602FC42D2D0AE0DC /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
+		50AF7F5FEE5D9A5AE42964D67117626B /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
+		53B86CFC267D51D01254B5C571AC09C0 /* Pods-BitcoinCodeChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitcoinCodeChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		5A14701490D3EE48FE86A20338008FFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		5C0E664ACD92A80D90790308DBBFB79C /* Pods-BitcoinCodeChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitcoinCodeChallenge.modulemap"; sourceTree = "<group>"; };
+		5F524EE97253820396A38098E7EA2ADB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		608A3BE9EE49D31D3814B9AEA2D988C8 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
+		630D8D26CC0B9ED68110894749BA8131 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
+		659A65A5200BF5B8E7044CFB811EF584 /* Pods-BitcoinCodeChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitcoinCodeChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
+		66AA5DB9DE61F3C9FE0AD01990A796AB /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
+		6D020F240E5E3D408035335F3403373A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7142236BC5949784CAFCAEC6A0519CA5 /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
+		72543614D5F3357BBA0AADD38A2CF63F /* Pods-BitcoinCodeChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitcoinCodeChallenge-resources.sh"; sourceTree = "<group>"; };
+		7590406B81F1D5B135F33B220FEFA7F9 /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
+		77336D4991DCE9B9A132C491FC496BCB /* Pods-BitcoinCodeChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitcoinCodeChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		784A7690955C0E6EA26A249DB31FA697 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		79C284A5521C300E544C8E9F0B566F0D /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		7AB9A68B2665C452AA623B843C4E81D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E1F19EC49536586BC99522494C6516A /* Pods-BitcoinCodeChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitcoinCodeChallenge-dummy.m"; sourceTree = "<group>"; };
+		8108DF2572251D807EC0FA381DF6CAF9 /* Pods-BitcoinCodeChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitcoinCodeChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87DA5EA9105F54F7E1EECC7DB33F19BC /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		89A6EDDA29D59301D2337D50A2DC49C1 /* Pods-BitcoinCodeChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitcoinCodeChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8BB72C3FEB9FF1630A21B855C0907A3F /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		8C8B197654C8D409C1B79A573254B3FD /* PMKMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKMapKit.h; path = Extensions/MapKit/Sources/PMKMapKit.h; sourceTree = "<group>"; };
+		8E986873A7E761369AA2832BAFC8358F /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
+		8F3EB60373D9BE72B86638417EDB4FF6 /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
+		8FB779D88B00547DBBE7C28A4E01B6AE /* Pods-BitcoinCodeChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitcoinCodeChallengeTests.modulemap"; sourceTree = "<group>"; };
+		95C534E3B6DAE5EDA56E401E4907C145 /* PMKCoreLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKCoreLocation.h; path = Extensions/CoreLocation/Sources/PMKCoreLocation.h; sourceTree = "<group>"; };
+		9893D391FB83D9C8B31C928BE51FE8D0 /* Pods_BitcoinCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BitcoinCodeChallengeTests.framework; path = "Pods-BitcoinCodeChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B43B743993B74288690A65595E982BC /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
+		9C1B0252B726949CEC877071E0E63A74 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		A09974E2E0A8B2CA6D179B85AABE5816 /* Pods-BitcoinCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A40CF814DAE8F66EB395E0DDA34EBFCE /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		A484239475FE6580315B8B07CD848908 /* Pods-BitcoinCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		A9387DD0FA2EABF3FD4603F7DFD5C773 /* Pods-BitcoinCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA3E0F7F719E3488B99EBC15E14DEA42 /* CLLocationManager+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationManager+Promise.swift"; path = "Extensions/CoreLocation/Sources/CLLocationManager+Promise.swift"; sourceTree = "<group>"; };
+		AD730A2EC157181D8E47E174BBBC6C77 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
+		B88A5A798A8109CA8BB39B1471981AF9 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
+		BAC17265F9DCBAECE3E16C0A2FD258D3 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
+		BAEA97F2381462F625DFDDE4A185EF43 /* MKMapSnapshotter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKMapSnapshotter+AnyPromise.m"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+AnyPromise.m"; sourceTree = "<group>"; };
+		BB256DBD0FFBB0720720A0430D79341C /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		C0665FF14BF04433694B18505F81B781 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2024357A7E98AAFC3D7BA2AE6CB4795 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
+		C27AE58516747FD63A9790C5E7880A11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD77F45380F4DFE578B8364863BDC02B /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
+		D28EA8116A761A48A0FDDEA98AE63F09 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
+		D4A987EC33528F864AB5ACC09A571D6B /* Pods-BitcoinCodeChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitcoinCodeChallenge-umbrella.h"; sourceTree = "<group>"; };
+		D787E72551B4D48533141E20176514FD /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
+		D9043CABD35984247B046EF3867FF563 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		DD65895A514E3600463AFC620F924FA8 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
+		DD9377215EBE2DBF7312B9952E6E87FA /* CLGeocoder+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLGeocoder+AnyPromise.m"; path = "Extensions/CoreLocation/Sources/CLGeocoder+AnyPromise.m"; sourceTree = "<group>"; };
+		E01B62FCA220CEF97DA4C162F037123D /* Pods-BitcoinCodeChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitcoinCodeChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E20318EB272EB48BAF6E7D48CFE199DC /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
+		E23633C4862ED2125EC8D7A572E94D6B /* CLLocationManager+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+AnyPromise.h"; path = "Extensions/CoreLocation/Sources/CLLocationManager+AnyPromise.h"; sourceTree = "<group>"; };
+		E59C5BB466266FFC38804304E66B0A26 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
+		E5DC8C79C02CE24FCCA8EB93CBC56ABC /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		E7B9B28B41D960C5225299D5CBE2D34D /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
+		ED9CE7F02EA920938FA7CE2AE0936C78 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
+		F1E33B0ACA00466BC9BEA2145C81FF90 /* MKDirections+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKDirections+Promise.swift"; path = "Extensions/MapKit/Sources/MKDirections+Promise.swift"; sourceTree = "<group>"; };
+		F35A470DB1017763F9A87F68E6ADD85A /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
+		F6B29C2595281D5745CA7AE91CC141D7 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
+		F732E24FA5F75942A0671C90E2B85895 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		FAD26B2A869C310BC4EE928E548D0177 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7D7671EF5FDBBDB218A0DFD80F0D30 /* MKMapSnapshotter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKMapSnapshotter+Promise.swift"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+Promise.swift"; sourceTree = "<group>"; };
+		FE565D0F7E674D3C89CE3E41A7EC9BF0 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		FE5F8FC8E7CB12A0F61E597C6ED3466D /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A81DE85C7738C224DA6094511825827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2731F3B6DFEA74801E6A4F90E81E42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D4CCF4BDF1CD23358BBFEE05AA91547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9362A47F91033319EA40F02CD092B07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9072F7B55A8C63AA1FC0F010BCE7FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA83852DE38A52EB3D4665F09599178 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE21B34A1712A1CF4F993B4D5994E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117EA5E3CBEED536F1817E744EC093A8 /* CoreLocation.framework in Frameworks */,
+				1E3BD530A30BC3463B381BA5AB254E20 /* Foundation.framework in Frameworks */,
+				79BBBA290FD4215EE63B03A7E9B18E1B /* MapKit.framework in Frameworks */,
+				951302F8968B1A2CE172B14BEE1CD941 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171ECA7AD9EB86B48234CE1B42D83CCD /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				0EA3BB7DE7A31CF61169AE75074AB9BE /* CLGeocoder+AnyPromise.h */,
+				DD9377215EBE2DBF7312B9952E6E87FA /* CLGeocoder+AnyPromise.m */,
+				05A3AB381F97F566400ED673B89DD9F2 /* CLGeocoder+Promise.swift */,
+				E23633C4862ED2125EC8D7A572E94D6B /* CLLocationManager+AnyPromise.h */,
+				00CCBB4F495318F27ED8DE813BB91F7B /* CLLocationManager+AnyPromise.m */,
+				AA3E0F7F719E3488B99EBC15E14DEA42 /* CLLocationManager+Promise.swift */,
+				95C534E3B6DAE5EDA56E401E4907C145 /* PMKCoreLocation.h */,
+			);
+			name = CoreLocation;
+			sourceTree = "<group>";
+		};
+		21B5A5B327FC44AF4A3A7C8A52A88CC7 /* Pods-BitcoinCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DBF67E79E249725413ED06C91F90FE0 /* Info.plist */,
+				8FB779D88B00547DBBE7C28A4E01B6AE /* Pods-BitcoinCodeChallengeTests.modulemap */,
+				E01B62FCA220CEF97DA4C162F037123D /* Pods-BitcoinCodeChallengeTests-acknowledgements.markdown */,
+				89A6EDDA29D59301D2337D50A2DC49C1 /* Pods-BitcoinCodeChallengeTests-acknowledgements.plist */,
+				0D3B0967D2AB9DB7EE2A6468811F2C1B /* Pods-BitcoinCodeChallengeTests-dummy.m */,
+				659A65A5200BF5B8E7044CFB811EF584 /* Pods-BitcoinCodeChallengeTests-frameworks.sh */,
+				08DF30E8D17749CF8D4277533371D8D3 /* Pods-BitcoinCodeChallengeTests-resources.sh */,
+				53B86CFC267D51D01254B5C571AC09C0 /* Pods-BitcoinCodeChallengeTests-umbrella.h */,
+				A09974E2E0A8B2CA6D179B85AABE5816 /* Pods-BitcoinCodeChallengeTests.debug.xcconfig */,
+				A9387DD0FA2EABF3FD4603F7DFD5C773 /* Pods-BitcoinCodeChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-BitcoinCodeChallengeTests";
+			path = "Target Support Files/Pods-BitcoinCodeChallengeTests";
+			sourceTree = "<group>";
+		};
+		267F7ACE20EC99A64EC5D8FCC544C755 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5F524EE97253820396A38098E7EA2ADB /* CoreLocation.framework */,
+				6D020F240E5E3D408035335F3403373A /* Foundation.framework */,
+				5A14701490D3EE48FE86A20338008FFB /* MapKit.framework */,
+				7AB9A68B2665C452AA623B843C4E81D3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3513263D1390853FAEDBF33B36A0992F /* CorePromise */ = {
+			isa = PBXGroup;
+			children = (
+				DD65895A514E3600463AFC620F924FA8 /* after.m */,
+				7142236BC5949784CAFCAEC6A0519CA5 /* after.swift */,
+				AD730A2EC157181D8E47E174BBBC6C77 /* AnyPromise.h */,
+				3989934331B65F41750A5DC6EA329DA4 /* AnyPromise.m */,
+				ED9CE7F02EA920938FA7CE2AE0936C78 /* AnyPromise.swift */,
+				0DC83064F9BA66C71A3E3F4E2B9246BD /* Box.swift */,
+				1280697E20393B28ACBAFC306C96E184 /* Catchable.swift */,
+				C2024357A7E98AAFC3D7BA2AE6CB4795 /* Configuration.swift */,
+				E59C5BB466266FFC38804304E66B0A26 /* CustomStringConvertible.swift */,
+				39D6D198F3EC14095119C31A018E351B /* Deprecations.swift */,
+				8BB72C3FEB9FF1630A21B855C0907A3F /* dispatch_promise.m */,
+				F732E24FA5F75942A0671C90E2B85895 /* Error.swift */,
+				0FF9BB9D0F8BFDDFB406051EFF86E94E /* firstly.swift */,
+				8E986873A7E761369AA2832BAFC8358F /* fwd.h */,
+				E20318EB272EB48BAF6E7D48CFE199DC /* Guarantee.swift */,
+				0ADB2FFBBB9850ABCC248821264399A0 /* hang.m */,
+				79C284A5521C300E544C8E9F0B566F0D /* hang.swift */,
+				41D7A0C0073638D444F7BBD591FD8306 /* join.m */,
+				8F3EB60373D9BE72B86638417EDB4FF6 /* LogEvent.swift */,
+				66AA5DB9DE61F3C9FE0AD01990A796AB /* Promise.swift */,
+				E7B9B28B41D960C5225299D5CBE2D34D /* PromiseKit.h */,
+				7590406B81F1D5B135F33B220FEFA7F9 /* race.m */,
+				9B43B743993B74288690A65595E982BC /* race.swift */,
+				FE565D0F7E674D3C89CE3E41A7EC9BF0 /* Resolver.swift */,
+				33322FE839B006DBD5CB18B21FCE745B /* Thenable.swift */,
+				1AC19AEBE9F283D351D396864C239780 /* when.m */,
+				F6B29C2595281D5745CA7AE91CC141D7 /* when.swift */,
+			);
+			name = CorePromise;
+			sourceTree = "<group>";
+		};
+		51AD6F35ACA35B4CD82893CA82BCEBFC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E3D911C6A6A440DCB001C9FA9B6CB31 /* Pods-BitcoinCodeChallenge */,
+				21B5A5B327FC44AF4A3A7C8A52A88CC7 /* Pods-BitcoinCodeChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		546AE9539A485C8BBF1987F4C05DAF43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27AE58516747FD63A9790C5E7880A11 /* Info.plist */,
+				87DA5EA9105F54F7E1EECC7DB33F19BC /* SwiftyJSON.modulemap */,
+				358513A6EDFFF5EADF090CF2EB7E3805 /* SwiftyJSON.xcconfig */,
+				BB256DBD0FFBB0720720A0430D79341C /* SwiftyJSON-dummy.m */,
+				418F41A7B984AA66348E7BCC2A3FC891 /* SwiftyJSON-prefix.pch */,
+				784A7690955C0E6EA26A249DB31FA697 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		5E3D911C6A6A440DCB001C9FA9B6CB31 /* Pods-BitcoinCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26B2A869C310BC4EE928E548D0177 /* Info.plist */,
+				5C0E664ACD92A80D90790308DBBFB79C /* Pods-BitcoinCodeChallenge.modulemap */,
+				8108DF2572251D807EC0FA381DF6CAF9 /* Pods-BitcoinCodeChallenge-acknowledgements.markdown */,
+				0EAEC29BB4FC763C58006172FD425C8C /* Pods-BitcoinCodeChallenge-acknowledgements.plist */,
+				7E1F19EC49536586BC99522494C6516A /* Pods-BitcoinCodeChallenge-dummy.m */,
+				77336D4991DCE9B9A132C491FC496BCB /* Pods-BitcoinCodeChallenge-frameworks.sh */,
+				72543614D5F3357BBA0AADD38A2CF63F /* Pods-BitcoinCodeChallenge-resources.sh */,
+				D4A987EC33528F864AB5ACC09A571D6B /* Pods-BitcoinCodeChallenge-umbrella.h */,
+				A484239475FE6580315B8B07CD848908 /* Pods-BitcoinCodeChallenge.debug.xcconfig */,
+				46AEEB316C3AE7082A74482C7EFD2FE0 /* Pods-BitcoinCodeChallenge.release.xcconfig */,
+			);
+			name = "Pods-BitcoinCodeChallenge";
+			path = "Target Support Files/Pods-BitcoinCodeChallenge";
+			sourceTree = "<group>";
+		};
+		6508B371CF1EB5722A73E759A5B05C2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2838B5FA8449F1F1119A45DC09C73C40 /* Pods_BitcoinCodeChallenge.framework */,
+				9893D391FB83D9C8B31C928BE51FE8D0 /* Pods_BitcoinCodeChallengeTests.framework */,
+				199935E01029EBE4829DFED4B8617F2C /* PromiseKit.framework */,
+				C0665FF14BF04433694B18505F81B781 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		668BC04DAD149815BFE0826D310748E9 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				40169F84396F3B53ADAE7F87D26EA623 /* PMKUIKit.h */,
+				D28EA8116A761A48A0FDDEA98AE63F09 /* UIView+AnyPromise.h */,
+				F35A470DB1017763F9A87F68E6ADD85A /* UIView+AnyPromise.m */,
+				FE5F8FC8E7CB12A0F61E597C6ED3466D /* UIView+Promise.swift */,
+				0870F7C76DCEB7F741EF7807DA5346A0 /* UIViewController+AnyPromise.h */,
+				13DB6CE0C0EC4FC90A4693D1D9934491 /* UIViewController+AnyPromise.m */,
+				630D8D26CC0B9ED68110894749BA8131 /* UIViewPropertyAnimator+Promise.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		7BBAD0F9BAA1D91C7C1034582F4109E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7AC7F3E11631A476B423963F98033B1 /* PromiseKit */,
+				E81E47A8FCCE869121655578F7ACFD72 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82E161E3A16E5140A9D9FA1CB3ED0596 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3A7B6459698C0CD3EB328D5FA0F96 /* MKDirections+AnyPromise.h */,
+				407513F930A0A3F519FB5EC191BF07E1 /* MKDirections+AnyPromise.m */,
+				F1E33B0ACA00466BC9BEA2145C81FF90 /* MKDirections+Promise.swift */,
+				182B0FB59850C13F41862391F0B93F17 /* MKMapSnapshotter+AnyPromise.h */,
+				BAEA97F2381462F625DFDDE4A185EF43 /* MKMapSnapshotter+AnyPromise.m */,
+				FD7D7671EF5FDBBDB218A0DFD80F0D30 /* MKMapSnapshotter+Promise.swift */,
+				8C8B197654C8D409C1B79A573254B3FD /* PMKMapKit.h */,
+			);
+			name = MapKit;
+			sourceTree = "<group>";
+		};
+		A7AC7F3E11631A476B423963F98033B1 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				171ECA7AD9EB86B48234CE1B42D83CCD /* CoreLocation */,
+				3513263D1390853FAEDBF33B36A0992F /* CorePromise */,
+				AFE48594ECDB96A7460AE119A80DBC27 /* Foundation */,
+				82E161E3A16E5140A9D9FA1CB3ED0596 /* MapKit */,
+				E84B79024275F9F0DA3706610ABEBC12 /* Support Files */,
+				668BC04DAD149815BFE0826D310748E9 /* UIKit */,
+			);
+			name = PromiseKit;
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		AFE48594ECDB96A7460AE119A80DBC27 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4B32628D8AEA72D4D3FDF79E8217BD05 /* afterlife.swift */,
+				2FC59FFFD79F22218B0C4FAC9890C1E3 /* NSNotificationCenter+AnyPromise.h */,
+				B88A5A798A8109CA8BB39B1471981AF9 /* NSNotificationCenter+AnyPromise.m */,
+				283B45820C9AF08306C1969C4BFD9EF3 /* NSNotificationCenter+Promise.swift */,
+				1248BA90977E31D20FCB5A8F35C0A593 /* NSObject+Promise.swift */,
+				50AF7F5FEE5D9A5AE42964D67117626B /* NSTask+AnyPromise.h */,
+				1D21D54353A273EFB583DC11EC5C41B0 /* NSTask+AnyPromise.m */,
+				A40CF814DAE8F66EB395E0DDA34EBFCE /* NSURLSession+AnyPromise.h */,
+				4F0A1EEEC9EC39A5602FC42D2D0AE0DC /* NSURLSession+AnyPromise.m */,
+				D9043CABD35984247B046EF3867FF563 /* NSURLSession+Promise.swift */,
+				D787E72551B4D48533141E20176514FD /* PMKFoundation.h */,
+				CD77F45380F4DFE578B8364863BDC02B /* Process+Promise.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				267F7ACE20EC99A64EC5D8FCC544C755 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				7BBAD0F9BAA1D91C7C1034582F4109E3 /* Pods */,
+				6508B371CF1EB5722A73E759A5B05C2D /* Products */,
+				51AD6F35ACA35B4CD82893CA82BCEBFC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E81E47A8FCCE869121655578F7ACFD72 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				E5DC8C79C02CE24FCCA8EB93CBC56ABC /* SwiftyJSON.swift */,
+				546AE9539A485C8BBF1987F4C05DAF43 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		E84B79024275F9F0DA3706610ABEBC12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				160260F55FDE865DC674EAFEF6662F67 /* Info.plist */,
+				9C1B0252B726949CEC877071E0E63A74 /* PromiseKit.modulemap */,
+				608A3BE9EE49D31D3814B9AEA2D988C8 /* PromiseKit.xcconfig */,
+				1912143AA7FAF1379B3E679873BA677C /* PromiseKit-dummy.m */,
+				05E3AFB7E076882B327E445B891D0212 /* PromiseKit-prefix.pch */,
+				BAC17265F9DCBAECE3E16C0A2FD258D3 /* PromiseKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromiseKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16BADA55E3AB7C8ABDC6B53096688D9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED59651EA4900265AB8A8FE705CE1A2 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323FB0890BAC168600F44BC98A4B496F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFBDD28CF34085A099383369A2CFFB6 /* Pods-BitcoinCodeChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B38C74B1D0DDDD35BEB1DB10D89E80F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D36E14F3510DCB7680E8F6563042CC /* Pods-BitcoinCodeChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA713374CE0F833A7631E83BE3D6B0E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C26D76662B230B3151F6B91C74615BC /* AnyPromise.h in Headers */,
+				F58F37CDB07C77B34E8C489DD24F3325 /* CLGeocoder+AnyPromise.h in Headers */,
+				B754CF94F54BD749C02DE0AA925E1403 /* CLLocationManager+AnyPromise.h in Headers */,
+				0BF27D26301645CB152EF4CC1C83925C /* fwd.h in Headers */,
+				9EB04332F6D032D2D21A377699846DFF /* MKDirections+AnyPromise.h in Headers */,
+				4946647B0991DE332BE8CBDB00028FEB /* MKMapSnapshotter+AnyPromise.h in Headers */,
+				2FADCD7D1B4504F79E9E5270927E3CC5 /* NSNotificationCenter+AnyPromise.h in Headers */,
+				405622AE208578EE3EBBC038A2662573 /* NSTask+AnyPromise.h in Headers */,
+				0FFEF9FF82B2A99279216BAE07CD7561 /* NSURLSession+AnyPromise.h in Headers */,
+				5C8CCCB0E72037FFA5D3BB7F048E11D2 /* PMKCoreLocation.h in Headers */,
+				766178B39C8E7363D59C8C6530F3A8D7 /* PMKFoundation.h in Headers */,
+				908CB3753E30C546C854EB3E29CFC7D7 /* PMKMapKit.h in Headers */,
+				9401E78BA6EA3657E13D0F641D8B3AF4 /* PMKUIKit.h in Headers */,
+				FD71DAA775498B208175C7DACD0E3986 /* PromiseKit-umbrella.h in Headers */,
+				2E60438A2D33D261513DF4644BADDD98 /* PromiseKit.h in Headers */,
+				D809A4787B96F68D1DAE0148CBC8E290 /* UIView+AnyPromise.h in Headers */,
+				7EB47468681D42063EC6016BC91451A3 /* UIViewController+AnyPromise.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2406D65F23C4F57E34A5A41F16EB15E2 /* Pods-BitcoinCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C067E8AC0451CB6F432B0B6B48F61A4E /* Build configuration list for PBXNativeTarget "Pods-BitcoinCodeChallenge" */;
+			buildPhases = (
+				323FB0890BAC168600F44BC98A4B496F /* Headers */,
+				ADD30B720A51FA7280D252DD76ECE752 /* Sources */,
+				6D4CCF4BDF1CD23358BBFEE05AA91547 /* Frameworks */,
+				2C9D3A3249FB954D4F15BB41699D240F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E91740EE2920A9973A159576C680AD2 /* PBXTargetDependency */,
+				FCC2248336E2FEBA674D5434C05FED51 /* PBXTargetDependency */,
+			);
+			name = "Pods-BitcoinCodeChallenge";
+			productName = "Pods-BitcoinCodeChallenge";
+			productReference = 2838B5FA8449F1F1119A45DC09C73C40 /* Pods_BitcoinCodeChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6437D0C3F75FA6BDE458F4F681CF09E3 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E95200E93E308505B9CCF296E608BC /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				16BADA55E3AB7C8ABDC6B53096688D9D /* Headers */,
+				0F54821948FB4CA07CD9E5A02DDC5B8D /* Sources */,
+				5A81DE85C7738C224DA6094511825827 /* Frameworks */,
+				4363636FA1B8653C3A48660E6F461864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = C0665FF14BF04433694B18505F81B781 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93DE80C764FB21C2780B7E1C828AC1AA /* PromiseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291C70AD60AC4D3FE5969D062086DC7E /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildPhases = (
+				AA713374CE0F833A7631E83BE3D6B0E1 /* Headers */,
+				099167200E3ABB019173EEF96B4EBB38 /* Sources */,
+				DEE21B34A1712A1CF4F993B4D5994E6E /* Frameworks */,
+				3B7721970B799BA1A6F6E0F58ACEAB0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromiseKit;
+			productName = PromiseKit;
+			productReference = 199935E01029EBE4829DFED4B8617F2C /* PromiseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4222BEB5C4B6D69CD66414A6B186927 /* Pods-BitcoinCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3827E657996EC682D22ECA8771C8A032 /* Build configuration list for PBXNativeTarget "Pods-BitcoinCodeChallengeTests" */;
+			buildPhases = (
+				9B38C74B1D0DDDD35BEB1DB10D89E80F /* Headers */,
+				8088C172FD731878820E92153ED37494 /* Sources */,
+				A9072F7B55A8C63AA1FC0F010BCE7FC1 /* Frameworks */,
+				39EAC75205E86089A16CF6562907971B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2436A46100595A3DCC5644D3D255A7B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-BitcoinCodeChallengeTests";
+			productName = "Pods-BitcoinCodeChallengeTests";
+			productReference = 9893D391FB83D9C8B31C928BE51FE8D0 /* Pods_BitcoinCodeChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6508B371CF1EB5722A73E759A5B05C2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2406D65F23C4F57E34A5A41F16EB15E2 /* Pods-BitcoinCodeChallenge */,
+				A4222BEB5C4B6D69CD66414A6B186927 /* Pods-BitcoinCodeChallengeTests */,
+				93DE80C764FB21C2780B7E1C828AC1AA /* PromiseKit */,
+				6437D0C3F75FA6BDE458F4F681CF09E3 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C9D3A3249FB954D4F15BB41699D240F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EAC75205E86089A16CF6562907971B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7721970B799BA1A6F6E0F58ACEAB0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4363636FA1B8653C3A48660E6F461864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		099167200E3ABB019173EEF96B4EBB38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5302863F71C1BCE935210AF5A77F8F4 /* after.m in Sources */,
+				A34DEBAEFA6719DA5C109A92F9EF45B9 /* after.swift in Sources */,
+				CCE0F29A728681CBCB5C7F9DB712351E /* afterlife.swift in Sources */,
+				D31C6B2EED949D8BEBF6D409B04D564D /* AnyPromise.m in Sources */,
+				9615745330CA7CC636B628780086BAC9 /* AnyPromise.swift in Sources */,
+				1BE7C4A1E3C89005A3B3A72B76204E1B /* Box.swift in Sources */,
+				2EB28038AA77DEA4F84B23233C51C353 /* Catchable.swift in Sources */,
+				7F8F2199798B53FA3EC0C3DB50685986 /* CLGeocoder+AnyPromise.m in Sources */,
+				799292D1084D05474F63EC4B7914B5A5 /* CLGeocoder+Promise.swift in Sources */,
+				3C9EAC390D2AF32D288617B85B28D532 /* CLLocationManager+AnyPromise.m in Sources */,
+				4932D3882A93457C3F2D801A06B74951 /* CLLocationManager+Promise.swift in Sources */,
+				46B99116DA7A8161BAB836410F5C7383 /* Configuration.swift in Sources */,
+				BA347199C762D3F05E68D82054895160 /* CustomStringConvertible.swift in Sources */,
+				923DE70C4AAD8B717314A6631994C753 /* Deprecations.swift in Sources */,
+				14771300C0F10F940F90CF4E34D37548 /* dispatch_promise.m in Sources */,
+				7BF663BE53D70B07510C7EE3FE334BC5 /* Error.swift in Sources */,
+				C2920A518171A316BBF7561D092C8CBD /* firstly.swift in Sources */,
+				12FAFB5C60410C8A50120229A327F6D0 /* Guarantee.swift in Sources */,
+				6FC3E29FE77F71CE784A54343265D693 /* hang.m in Sources */,
+				944DDE36BBDE6730775F753168C1F923 /* hang.swift in Sources */,
+				D2FFD9450618242EFB570BF55C6E53A4 /* join.m in Sources */,
+				B07E2DBD04BE35EF64B8C08A53035168 /* LogEvent.swift in Sources */,
+				10DCD0618EC92C7A962AAE7216BAA6C3 /* MKDirections+AnyPromise.m in Sources */,
+				6AB3CCD1C245118B74AB73337346E8EC /* MKDirections+Promise.swift in Sources */,
+				4D59A502F952C320AC8ABC548AAAA6F9 /* MKMapSnapshotter+AnyPromise.m in Sources */,
+				8CF976AEA949C617F9FAF42F44108608 /* MKMapSnapshotter+Promise.swift in Sources */,
+				DD3530A313E610C7DF11B68D42E3D6AD /* NSNotificationCenter+AnyPromise.m in Sources */,
+				AC37C716D240E96CF79A44AB92066612 /* NSNotificationCenter+Promise.swift in Sources */,
+				6FEDF5AFD283C0FC98EF435EC9024434 /* NSObject+Promise.swift in Sources */,
+				08156A9275DBE0E4EF133699A5EE1D30 /* NSTask+AnyPromise.m in Sources */,
+				0136CAC7DDC1638805E6EC8A43644F3E /* NSURLSession+AnyPromise.m in Sources */,
+				F618C88F2BE64A4811EDF77136758331 /* NSURLSession+Promise.swift in Sources */,
+				F5E3329A35C3665D691E65E0C9782E82 /* Process+Promise.swift in Sources */,
+				FBC5ED12B9FF72115DC4FEAB4D34123E /* Promise.swift in Sources */,
+				C8AB7D3D829E42C8CC40504F08F6B1C0 /* PromiseKit-dummy.m in Sources */,
+				DDD20A5D1CAC38EDB49C358E2334AFD1 /* race.m in Sources */,
+				B1F0315F58CAE05338F05524CA96F3C9 /* race.swift in Sources */,
+				01A2A6E97D5A8FA1CEF93E1FB42365FE /* Resolver.swift in Sources */,
+				F3514511106CF744593511EE242436DF /* Thenable.swift in Sources */,
+				F60940C24EB266EEDCD533F11B46AE4F /* UIView+AnyPromise.m in Sources */,
+				6E6FE21DCDEB134BE63E96295172F533 /* UIView+Promise.swift in Sources */,
+				AD15FD12205F3B4036B9AE489EF3DAEC /* UIViewController+AnyPromise.m in Sources */,
+				2C9729582F19175CD4AFE76CAFE1AC43 /* UIViewPropertyAnimator+Promise.swift in Sources */,
+				2C1952E764FECE6D38E77F72F5C4EA6A /* when.m in Sources */,
+				550481B4BFF7ABBF8B9554ACB85E2D19 /* when.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F54821948FB4CA07CD9E5A02DDC5B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134CD5068E149A620854FD98BFBCFC60 /* SwiftyJSON-dummy.m in Sources */,
+				C6610BA72BBBBFC52F48EEA306B5BAE6 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8088C172FD731878820E92153ED37494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADB55BC0692D7845F5DE99FAD40B61C /* Pods-BitcoinCodeChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD30B720A51FA7280D252DD76ECE752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D236845956F69A9AD9DDA5B7266F5B1F /* Pods-BitcoinCodeChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2436A46100595A3DCC5644D3D255A7B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BitcoinCodeChallenge";
+			target = 2406D65F23C4F57E34A5A41F16EB15E2 /* Pods-BitcoinCodeChallenge */;
+			targetProxy = DD5A932A0B4FF781EE130585F882FBD7 /* PBXContainerItemProxy */;
+		};
+		9E91740EE2920A9973A159576C680AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 93DE80C764FB21C2780B7E1C828AC1AA /* PromiseKit */;
+			targetProxy = 4ED875DA1119F0D29CF17C8A1BBE0580 /* PBXContainerItemProxy */;
+		};
+		FCC2248336E2FEBA674D5434C05FED51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 6437D0C3F75FA6BDE458F4F681CF09E3 /* SwiftyJSON */;
+			targetProxy = F8FC74959ADFDD3CCE9295CC3A10A618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07A85607CB02B34FC57A8A44BA60E9AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09974E2E0A8B2CA6D179B85AABE5816 /* Pods-BitcoinCodeChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinCodeChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinCodeChallengeTests/Pods-BitcoinCodeChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17FE07AE82D655F5C35F11758E88D48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A484239475FE6580315B8B07CD848908 /* Pods-BitcoinCodeChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinCodeChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinCodeChallenge/Pods-BitcoinCodeChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42A6FD92362B4415E94D1016EF25A9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608A3BE9EE49D31D3814B9AEA2D988C8 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				PRODUCT_MODULE_NAME = PromiseKit;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4ACA8B08FF7B473A7684C01D8908E4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358513A6EDFFF5EADF090CF2EB7E3805 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		751E926C9FFA061EC685CA6FF4E728E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9BB71C14032ECB363D157B8E96147B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9387DD0FA2EABF3FD4603F7DFD5C773 /* Pods-BitcoinCodeChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinCodeChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinCodeChallengeTests/Pods-BitcoinCodeChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FD17F7BBE5A9745EECCAB9055E1E750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AEEB316C3AE7082A74482C7EFD2FE0 /* Pods-BitcoinCodeChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinCodeChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinCodeChallenge/Pods-BitcoinCodeChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E96EEBC9A290F1AF00C4C93A2EE99C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608A3BE9EE49D31D3814B9AEA2D988C8 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				PRODUCT_MODULE_NAME = PromiseKit;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2783A82A694E18125F148E253948CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358513A6EDFFF5EADF090CF2EB7E3805 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB9D6A439C6489A023298D9B267B8F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		291C70AD60AC4D3FE5969D062086DC7E /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96EEBC9A290F1AF00C4C93A2EE99C1C /* Debug */,
+				42A6FD92362B4415E94D1016EF25A9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3827E657996EC682D22ECA8771C8A032 /* Build configuration list for PBXNativeTarget "Pods-BitcoinCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A85607CB02B34FC57A8A44BA60E9AE /* Debug */,
+				9BB71C14032ECB363D157B8E96147B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751E926C9FFA061EC685CA6FF4E728E6 /* Debug */,
+				FB9D6A439C6489A023298D9B267B8F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C067E8AC0451CB6F432B0B6B48F61A4E /* Build configuration list for PBXNativeTarget "Pods-BitcoinCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17FE07AE82D655F5C35F11758E88D48B /* Debug */,
+				9FD17F7BBE5A9745EECCAB9055E1E750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E95200E93E308505B9CCF296E608BC /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2783A82A694E18125F148E253948CBD /* Debug */,
+				4ACA8B08FF7B473A7684C01D8908E4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
