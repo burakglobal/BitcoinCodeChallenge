@@ -158,7 +158,7 @@ class HomeInteractor: PresenterToInteractorProtocol{
     private func updateWithCurrentLocation(completition:@escaping(_ res:Bool) ->()) {
         locationHelper.getLocation()
             .done { [weak self] placemark in
-                self?.weatherArr.insert(HomeModel(cityName: placemark.name ?? "--", latitude: placemark.location?.coordinate.latitude ?? 0.0, longitude: placemark.location?.coordinate.longitude ?? 0.0), at: 0)
+                self?.weatherArr.insert(HomeModel(cityName: "\(placemark.subAdministrativeArea ?? "")", latitude: placemark.location?.coordinate.latitude ?? 0.0, longitude: placemark.location?.coordinate.longitude ?? 0.0), at: 0)
                 completition(true)
             }
             .catch { error in

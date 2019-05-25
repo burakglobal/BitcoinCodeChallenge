@@ -8,7 +8,6 @@ target 'BitcoinCodeChallenge' do
   pod "PromiseKit"
   pod "PromiseKit/MapKit"         
   pod "PromiseKit/CoreLocation"   
-  pod "SwiftyJSON"
   pod 'NVActivityIndicatorView'
 
   target 'BitcoinCodeChallengeTests' do

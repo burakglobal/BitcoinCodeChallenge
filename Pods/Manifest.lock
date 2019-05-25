@@ -15,26 +15,22 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.8.4):
     - PromiseKit/CorePromise
-  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - NVActivityIndicatorView
   - PromiseKit
   - PromiseKit/CoreLocation
   - PromiseKit/MapKit
-  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - NVActivityIndicatorView
     - PromiseKit
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 250783f4f95650ee4d9bdeb16a55cb31e6e42dc1
+PODFILE CHECKSUM: bf359b5932e3a7538258f668596978e56d73f0ca
 
 COCOAPODS: 1.5.3
